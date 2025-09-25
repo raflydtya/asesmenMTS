@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS - MTS Prof YPI Syahda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') 
+                  no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background: rgba(0, 60, 0, 0.7);
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      width: 90%;
+      max-width: 550px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      width: 80px;
+      margin-right: 15px;
+    }
+
+    .title {
+      text-align: left;
+    }
+
+    .title h1 {
+      font-size: 26px;
+      margin: 0;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .title h2 {
+      font-size: 20px;
+      margin: 5px 0 0;
+      font-weight: 500;
+      color: #e0f7df;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .title h3 {
+      font-size: 15px;
+      margin: 3px 0 0;
+      font-weight: 400;
+      color: #d0e6d8;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .info {
+      margin-bottom: 25px;
+    }
+
+    .info-card {
+      background: rgba(0, 100, 0, 0.85);
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #f1f1f1;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #e0e0e0;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .btn {
+      background: #00b894;
+      border: none;
+      padding: 12px 25px;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background: #019875;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Book_icon_1.png/600px-Book_icon_1.png" alt="Logo" class="logo">
+      <div class="title">
+        <h1>Asesmen Sumatif Tengah Semester</h1>
+        <h2>MTs Prof. YPI SYAHDA</h2>
+        <h3>Tahun Ajaran 2025/2026</h3>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="info-card">Tanggal Ujian: 25 September 2025</div>
+      <div class="info-card">Mata Pelajaran: Bahasa Indonesia</div>
+      <div class="info-card">Waktu Ujian: 08.00 - 10.00 WIB</div>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama Peserta</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda">
+      </div>
+      <div class="form-group">
+        <label for="nomor">Nomor Peserta</label>
+        <input type="text" id="nomor" placeholder="Masukkan nomor peserta">
+      </div>
+      <button type="submit" class="btn">Mulai Ujian</button>
+    </form>
+  </div>
+</body>
+</html>
